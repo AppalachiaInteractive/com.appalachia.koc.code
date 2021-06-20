@@ -15,11 +15,11 @@ jobs:
     steps:
     - name: Assign Issues to Main Project
       uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event.action == 'opened'
+      #if: github.event.action == 'opened'
       with:
         project: 'https://github.com/orgs/AppalachiaInteractive/projects/1'
     - name: Assign Issues to Targeted Project
       uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event.action == 'opened'
+      #if: github.event.action == 'opened'
       with:
         project: 'https://github.com/orgs/AppalachiaInteractive/projects/3'
